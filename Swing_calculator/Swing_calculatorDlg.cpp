@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CSwingcalculatorDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDOK, &CSwingcalculatorDlg::OnBnClickedOk)
+	ON_BN_CLICKED(IDABOUT, &CSwingcalculatorDlg::OnBnClickedAbout)
 END_MESSAGE_MAP()
 
 
@@ -212,4 +213,12 @@ void CSwingcalculatorDlg::OnBnClickedOk()
 			pEditResult[i + 1]->SetWindowTextW(sEditResult[i + 1].c_str());
 		};
 	}
+}
+
+
+void CSwingcalculatorDlg::OnBnClickedAbout()
+{
+	// TODO: Add your control notification handler code here
+	CAboutDlg cAboutDlg;
+	cAboutDlg.DoModal();
 }

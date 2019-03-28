@@ -2,6 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by Swingcalculator.rc
 //
+#define IDABOUT                         3
 #define IDM_ABOUTBOX                    0x0010
 #define IDD_ABOUTBOX                    100
 #define IDS_ABOUTBOX                    101
