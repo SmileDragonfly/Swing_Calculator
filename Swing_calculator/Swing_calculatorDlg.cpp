@@ -76,6 +76,9 @@ BOOL CSwingcalculatorDlg::OnInitDialog()
 	// Set Default to High
 	CButton* pHighRadio = (CButton*)GetDlgItem(IDC_HIGH_RADIO);
 	pHighRadio->SetCheck(TRUE);
+	// Set title
+	CWnd * pWnd = AfxGetMainWnd();
+	pWnd->SetWindowTextW(L"Swing Calculator");
 	// Add "About..." menu item to system menu.
 
 	// IDM_ABOUTBOX must be in the system command range.
